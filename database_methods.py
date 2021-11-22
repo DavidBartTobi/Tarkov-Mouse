@@ -1,7 +1,7 @@
 import sqlite3
 
 
-def Add_Weapon(name, speed):
+def add_weapon(name, speed):
 
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
@@ -13,7 +13,7 @@ def Add_Weapon(name, speed):
     conn.commit()
     conn.close()
 
-def Edit_Speed(name, speed):
+def edit_speed(name, speed):
 
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
@@ -23,7 +23,7 @@ def Edit_Speed(name, speed):
     conn.commit()
     conn.close()
 
-def Delete_Weapon(name):
+def delete_weapon(name):
 
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
@@ -33,7 +33,7 @@ def Delete_Weapon(name):
     conn.commit()
     conn.close()
 
-def Delete_All_Weapons():
+def delete_all_weapons():
 
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
@@ -43,7 +43,7 @@ def Delete_All_Weapons():
     conn.commit()
     conn.close()
 
-def Get_Weapon_Names():
+def get_weapon_names():
 
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
@@ -57,7 +57,7 @@ def Get_Weapon_Names():
     conn.close()
     return list
 
-def Get_Templates_List():
+def get_templates_list():
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
 
@@ -70,7 +70,7 @@ def Get_Templates_List():
     conn.close()
     return list
 
-def Get_Weapon_ID(weapon):
+def get_weapon_id(weapon):
 
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
@@ -82,7 +82,7 @@ def Get_Weapon_ID(weapon):
     conn.close()
     return id
 
-def Get_Mouse_Speed(weapon):
+def get_mouse_speed(weapon):
 
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
