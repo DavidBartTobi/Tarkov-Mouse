@@ -84,6 +84,9 @@ def get_weapon_id(weapon):
 
 def get_mouse_speed(weapon):
 
+    if len(weapon) == 0:
+        return -1
+
     conn = sqlite3.connect('MouseSpeedsDB.db')
     c = conn.cursor()
 
