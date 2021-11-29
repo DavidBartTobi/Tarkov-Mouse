@@ -30,7 +30,7 @@ class Program:
         self.current_speed_label = Label(self.root, text=f"Current Speed: {self.get_current_speed()}",
                                              font='Impact', fg='#022b5d', bg='#dcdad5')
 
-        grid.Main_Grid(self.templates_list, self.drop_menu, self.confirmation_button, self.reset_button,
+        grid.main_grid(self.templates_list, self.drop_menu, self.confirmation_button, self.reset_button,
                        self.modify_button, self.current_speed_label)
 
         # Modification grid widgets:
@@ -174,21 +174,21 @@ class Program:
             self.update_dropmenus()
 
     def modification_grid(self):
-        grid.Hide_Main_Grid(self.drop_menu, self.confirmation_button, self.reset_button, self.modify_button,
+        grid.hide_main_grid(self.drop_menu, self.confirmation_button, self.reset_button, self.modify_button,
                             self.current_speed_label)
-        grid.Modification_Grid(self.templates_list, self.new_template_button, self.weapon_name_entry,
+        grid.modification_grid(self.templates_list, self.new_template_button, self.weapon_name_entry,
                                self.weapon_speed_entry, self.save_new_template_button, self.edit_speed_button,
                                self.edit_drop_menu, self.weapon_speed_edit_entry, self.save_new_edit_button,
                                self.delete_template_button, self.delete_drop_menu, self.save_delete_button,
                                self.delete_all_templates_button, self.return_button)
 
     def return_main_grid(self):
-        grid.Hide_Modification_Grid(self.new_template_button, self.weapon_name_entry, self.weapon_speed_entry,
+        grid.hide_modification_grid(self.new_template_button, self.weapon_name_entry, self.weapon_speed_entry,
                                     self.save_new_template_button, self.edit_speed_button, self.edit_drop_menu,
                                     self.weapon_speed_edit_entry, self.save_new_edit_button,
                                     self.delete_template_button, self.delete_drop_menu, self.save_delete_button,
                                     self.delete_all_templates_button, self.return_button)
-        grid.Main_Grid(self.templates_list, self.drop_menu, self.confirmation_button, self.reset_button,
+        grid.main_grid(self.templates_list, self.drop_menu, self.confirmation_button, self.reset_button,
                        self.modify_button, self.current_speed_label)
 
 
