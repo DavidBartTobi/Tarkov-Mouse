@@ -1,6 +1,6 @@
 
 
-def Main_Grid(templates_list, drop_menu, confirmation_button, reset_button, modify_button, current_speed_label):
+def main_grid(templates_list, drop_menu, confirmation_button, reset_button, modify_button, current_speed_label):
     
     drop_menu.grid(row=0, column=0, columnspan=2, pady=(320, 0), ipady=5, padx=(180,0))
     drop_menu.configure(width=30)
@@ -18,7 +18,7 @@ def Main_Grid(templates_list, drop_menu, confirmation_button, reset_button, modi
     current_speed_label.grid(row=2, rowspan=2, columnspan=4, ipadx=12, ipady=2, pady=(0, 40))
 
 
-def Modification_Grid(templates_list, new_template_button, weapon_name_entry, weapon_speed_entry, save_new_template_button
+def modification_grid(templates_list, new_template_button, weapon_name_entry, weapon_speed_entry, save_new_template_button
                       , edit_speed_button, edit_drop_menu, weapon_speed_edit_entry, save_new_edit_button,
                       delete_template_button, delete_drop_menu, save_delete_button, delete_all_templates_button,
                       return_button):
@@ -50,7 +50,7 @@ def Modification_Grid(templates_list, new_template_button, weapon_name_entry, we
     delete_all_templates_button.grid(row=3, column=3, ipadx=29, padx=(0, 10))
 
 
-def Hide_Main_Grid(drop_menu, confirmation_button, reset_button, modify_button, current_speed_label):
+def hide_main_grid(drop_menu, confirmation_button, reset_button, modify_button, current_speed_label):
     drop_menu.grid_forget()
     confirmation_button.grid_forget()
     reset_button.grid_forget()
@@ -58,7 +58,7 @@ def Hide_Main_Grid(drop_menu, confirmation_button, reset_button, modify_button, 
     current_speed_label.grid_forget()
 
 
-def Hide_Modification_Grid(new_template_button, weapon_name_entry, weapon_speed_entry, save_new_template_button,
+def hide_modification_grid(new_template_button, weapon_name_entry, weapon_speed_entry, save_new_template_button,
                       edit_speed_button, edit_drop_menu, weapon_speed_edit_entry, save_new_edit_button,
                       delete_template_button, delete_drop_menu, save_delete_button, delete_all_templates_button,
                       return_button):
